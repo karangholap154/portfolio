@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 189 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 189 100% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 189 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --cyan: 189 100% 50%;
+    --cyan-glow: 189 100% 60%;
+    --gradient-cyan: linear-gradient(135deg, hsl(189 100% 50%), hsl(200 100% 60%));
+    --card-bg: 0 0% 8%;
+    --hover-bg: 0 0% 12%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased font-sans;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent;
+  }
+
+  .glow-cyan {
+    text-shadow: 0 0 20px hsl(var(--cyan) / 0.5);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-500/10;
+  }
+
+  .glass {
+    @apply bg-background/40 backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-card {
+    @apply bg-background/60 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+
+  .star-animate {
+    animation: twinkle 3s ease-in-out infinite;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .float-animate {
+    animation: float 6s ease-in-out infinite;
+  }
+}
