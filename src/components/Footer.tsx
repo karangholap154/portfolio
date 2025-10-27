@@ -18,8 +18,9 @@ export const Footer = () => {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <p className="text-muted-foreground">
-              © 2025 Karan Gholap. Crafted with ❤️ and React
+            <p className="text-muted-foreground text-center text-sm md:text-base">
+              © 2025 Karan Gholap
+              <span className="block md:inline"> | Based in Maharashtra, India</span>
             </p>
           </motion.div>
 
