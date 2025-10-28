@@ -5,11 +5,13 @@ const education = [
   {
     degree: "Bachelor's in Computer Engineering",
     institution: "University of Mumbai",
+    location: "Mumbai, Maharashtra",
     period: "2022 – 2025 (Completed)",
   },
   {
     degree: "Diploma in Computer Engineering",
     institution: "Rasiklal M. Dhariwal Institute of Technology",
+    location: "Pune, Maharashtra",
     period: "2019 – 2022",
   },
 ];
@@ -42,12 +44,17 @@ export const Education = () => {
                   <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                     <GraduationCap className="text-primary" size={24} />
                   </div>
-                  
+
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-foreground mb-2">
                       {edu.degree}
                     </h3>
-                    <p className="text-muted-foreground mb-2">{edu.institution}</p>
+                    <p className="text-muted-foreground mb-2">
+                      {edu.institution}
+                    </p>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {edu.location}
+                    </p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Calendar size={16} />
                       <span>{edu.period}</span>
