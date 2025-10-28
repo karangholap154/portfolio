@@ -5,22 +5,31 @@ const skillCategories = [
   {
     title: "Frontend",
     icon: Layout,
-    skills: ["React.js", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS", "Bootstrap"],
+    skills: [
+      "React.js",
+      "Next.js",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "Bootstrap",
+    ],
   },
   {
     title: "Backend",
     icon: Code2,
-    skills: ["Node.js", "Express.js", "Flask"],
+    skills: ["Node.js", "Express.js", "Python", "Flask"],
   },
   {
     title: "Database",
     icon: Database,
-    skills: ["PostgreSQL", "MySQL", "MongoDB"],
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Supabase"],
   },
   {
     title: "Tools & Platforms",
     icon: Wrench,
-    skills: ["Git", "GitHub", "Figma", "Vercel", "Netlify"],
+    skills: ["Git", "GitHub", "Figma", "AWS", "Vercel", "Netlify"],
   },
 ];
 
@@ -53,9 +62,11 @@ export const Skills = () => {
                   <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                     <category.icon className="text-primary" size={24} />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    {category.title}
+                  </h3>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
                     <span
