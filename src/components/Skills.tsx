@@ -14,6 +14,7 @@ const skillCategories = [
       "TypeScript",
       "Tailwind CSS",
       "Bootstrap",
+      "Shadcn UI",
     ],
   },
   {
@@ -29,7 +30,7 @@ const skillCategories = [
   {
     title: "Tools & Platforms",
     icon: Wrench,
-    skills: ["Git", "GitHub", "Figma", "AWS", "Vercel", "Netlify"],
+    skills: ["Git", "GitHub", "Figma", "JIRA", "AWS", "Vercel", "Netlify", "VS Code", "Postman"],
   },
 ];
 

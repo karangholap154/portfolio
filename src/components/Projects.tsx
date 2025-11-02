@@ -7,6 +7,7 @@ import employeeImage from "@/assets/employee-management.jpg";
 import studyMaterialImage from "@/assets/study-material.jpg";
 import storeRatingImage from "@/assets/store-rating.jpg";
 import cryptoDashImage from "@/assets/cryptodash.jpg";
+import bilixInvoiceImage from "@/assets/bilix-invoice.jpg";
 
 const projects = [
   {
@@ -25,6 +26,26 @@ const projects = [
     liveUrl: "https://www.privateacademy.in/",
     githubUrl: "https://github.com/karangholap154/simple-pvt-web",
     image: studyMaterialImage,
+  },
+  {
+    title: "Bilix - Invoice Generator",
+    description:
+      "A sleek and user-friendly invoice generator with customizable templates and PDF export functionality.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "ShadCn/ui",
+      "Framer Motion",
+      "React Hook Form",
+      "jsPDF",
+      "Vercel",
+      "React Router",
+      "Supabase",
+    ],
+    liveUrl: "https://bilix.vercel.app/",
+    githubUrl: "https://github.com/karangholap154/bilix-invoice",
+    image: bilixInvoiceImage,
   },
   {
     title: "SmartTools Hub | Utility Tools Platform",
