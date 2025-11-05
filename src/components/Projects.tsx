@@ -8,6 +8,7 @@ import studyMaterialImage from "@/assets/study-material.jpg";
 import storeRatingImage from "@/assets/store-rating.jpg";
 import cryptoDashImage from "@/assets/cryptodash.jpg";
 import bilixInvoiceImage from "@/assets/bilix-invoice.jpg";
+import priMateImage from "@/assets/privmate.jpg";
 
 const projects = [
   {
@@ -26,6 +27,24 @@ const projects = [
     liveUrl: "https://www.privateacademy.in/",
     githubUrl: "https://github.com/karangholap154/simple-pvt-web",
     image: studyMaterialImage,
+  },
+  {
+    title: "PrivMate - AI powered study companion",
+    description:
+      "Get instant, accurate answers to any study question. Our AI understands context and provides detailed explanations.",
+    tech: [
+      "React.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "ShadCn/ui",
+      "TypeScript",
+      "JavaScript",
+      "Supabase",
+      "Gemini API",
+    ],
+    liveUrl: "https://chat.privateacademy.in/",
+    githubUrl: "https://github.com/karangholap154/PrivMate-ai",
+    image: priMateImage,
   },
   {
     title: "Bilix - Invoice Generator",
